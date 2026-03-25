@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — JLP Studio</title>
+  <meta name="description" content="Tell us your problem. No sales call required. We respond within 1 business day.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="site-nav">
+  <div class="container nav-inner">
+    <a href="index.html" class="nav-logo">JLP<span>Studio</span></a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="services.html">Services</a></li>
+      <li><a href="process.html">Process</a></li>
+      <li><a href="about.html">Work</a></li>
+      <li class="nav-cta"><a href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="container">
+    <span class="eyebrow">Get in touch</span>
+    <h1>Tell us what you're dealing with</h1>
+    <p>No sales call required first. Just describe the problem — we'll figure out the rest from there.</p>
+  </div>
+</div>
+
+<!-- CONTACT FORM -->
+<section>
+  <div class="container">
+    <div class="contact-grid">
+
+      <div>
+        <form id="contact-form" action="mailto:jpalek@jlpstudio.com" method="POST" enctype="text/plain" novalidate>
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="company">Business / Company <span class="opt">(optional)</span></label>
+            <input type="text" id="company" name="company" placeholder="Your business name or type">
+          </div>
+
+          <div class="form-group">
+            <label for="problem">What problem are you trying to solve?</label>
+            <textarea id="problem" name="problem" placeholder="Describe what's broken, slow, or costing you money. Be as specific or general as you need — we'll ask follow-up questions." required></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Rough budget range</label>
+            <select id="budget" name="budget">
+              <option value="">Select a range…</option>
+              <option value="under-1k">Under $1,000</option>
+              <option value="1k-5k">$1,000 – $5,000</option>
+              <option value="5k-20k">$5,000 – $20,000</option>
+              <option value="20k-plus">$20,000+</option>
+              <option value="unknown">Not sure yet</option>
+            </select>
+          </div>
+
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;">Send it over</button>
+
+          <p class="form-note">We respond within 1 business day. No sales pressure, no automated follow-up sequences.</p>
+
+        </form>
+
+        <div class="form-success" id="form-success">
+          Message sent — we'll get back to you within 1 business day.
+        </div>
+      </div>
+
+      <div>
+        <div class="contact-sidebar">
+          <h3>What happens after you submit</h3>
+
+          <div class="sidebar-item">
+            <strong style="font-size:0.85rem;">You hear from a real person</strong>
+            <p>Within 1 business day. Not an automated reply, not a drip sequence.</p>
+          </div>
+
+          <div class="sidebar-item">
+            <strong style="font-size:0.85rem;">We ask the right questions</strong>
+            <p>If we need more detail to scope your project, we'll ask — specifically, not generically.</p>
+          </div>
+
+          <div class="sidebar-item">
+            <strong style="font-size:0.85rem;">You get an honest answer</strong>
+            <p>What's buildable, what it costs, how long it takes. If it's not worth building, we'll tell you that too.</p>
+          </div>
+
+          <div class="sidebar-item">
+            <strong style="font-size:0.85rem;">No commitment required</strong>
+            <p>The intake form is just a conversation. No contract, no obligation until you decide to move forward.</p>
+          </div>
+        </div>
+
+        <div style="margin-top:1.5rem;padding:1.5rem;background:var(--bg-alt);border-radius:var(--radius);">
+          <h3 style="font-size:0.95rem;margin-bottom:0.75rem;">The escrow promise</h3>
+          <p style="font-size:0.85rem;color:var(--text-muted);">For projects over $3,000, payment is held by a neutral third party and released only when you confirm delivery. <a href="process.html">Learn how it works →</a></p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-inner">
+      <div>
+        <div class="footer-logo">JLP<span>Studio</span></div>
+        <div class="footer-note" style="margin-top:0.5rem;">Built with an AI studio system that runs overnight.</div>
+      </div>
+      <ul class="footer-links">
+        <li><a href="services.html">Services</a></li>
+        <li><a href="process.html">Process</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
