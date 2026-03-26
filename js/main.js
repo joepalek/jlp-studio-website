@@ -1,5 +1,5 @@
 /* ============================================================
-   JLP Studio — main.js
+   LightworkAI — main.js
    Mobile nav toggle + contact form handling
    ============================================================ */
 
@@ -129,7 +129,7 @@
         btn.textContent = 'Try again';
         btn.disabled = false;
       }
-      alert('Something went wrong — email us directly at contact@jlpstudio.com');
+      alert('Something went wrong — email us directly at contact@lightworkai.com');
     }
   }
 
